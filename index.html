@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IQ Test </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <section class="main-area">
+        <div class="question">
+            <img id="main-question" src="img/q1.png">
+        </div>
+        <div class="answers">
+            <img class="answer-img" data-char="a" src="img/q1a.png">
+            <img class="answer-img" data-char="b" src="img/q1b.png">
+            <img class="answer-img" data-char="c" src="img/q1c.png">
+            <img class="answer-img" data-char="d" src="img/q1d.png">
+            <img class="answer-img" data-char="e" src="img/q1e.png">
+            <img class="answer-img" data-char="f" src="img/q1f.png">
+        </div>
+    </section>
+
+    <section class="nav-area">
+        <nav>
+            <button type="button" class="nav-btn" id="prev-btn"> Prev Question </button>
+            <button type="button" class="nav-btn" id="next-btn"> Next Question </button>
+        </nav>
+        <button type="button" id="finish-btn" class="finish-btn"> Finish </button>
+    </section>
+
+
+    <section class="result-area">
+
+        <h1> Your quiz is finished </h1>
+
+        <div class="result-stats">
+            <p>
+                <span> You answered </span>
+                <b id="result-corrects"></b>
+                <span> questions correctly </span>
+            </p>
+            <p>
+                <span> You answered </span>
+                <b id="result-wrongs"></b>
+                <span> questions wrong </span>
+            </p>
+            <p>
+                <span> You left </span>
+                <b id="result-blanks"></b>
+                <span> blnak </span>
+            </p>
+        </div>
+
+        <div class="final-iq">
+            <span> Your final IQ is : </span>
+            <small> This IQ Test can measure from 85 to 145 </small>
+            <b class="result-iq" id="result-iq"></b>
+        </div>
+
+
+        <div class="retry">
+            <button type="button" id="retry-btn"> Retry </button>
+        </div>
+
+    </section>
+    
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

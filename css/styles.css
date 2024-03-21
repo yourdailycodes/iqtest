@@ -1,0 +1,133 @@
+
+/*********************************************
+======== GENERAL CODES  ==================
+**********************************************/
+
+:root {
+    --primary : #d4a373;
+    --primary-light : #faedcd;
+    --light : #fefae0;
+    --black : #111;
+    --white : #f0f0f0;
+    --green : #ccd5ae;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+
+
+/*********************************************
+======== MAIN AREA  ==================
+**********************************************/
+
+.main-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.main-area .answer-img {
+    cursor: pointer;
+    border: 4px solid var(--primary);
+    margin: 0.5rem;
+    background-color: #fff;
+    padding: 10px 0 8px 15px;
+    transition: all 0.25s;
+}
+
+.main-area .answer-img:hover {
+    transform: scale(1.125);
+}
+
+
+
+/*********************************************
+======== NAV AREA  ==================
+**********************************************/
+
+.nav-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-area > nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-area button {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: var(--black);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-area .nav-btn {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+.nav-area .nav-btn:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.nav-area .finish-btn {
+    border-color: var(--green);
+    background-color: var(--green);
+    min-width: 200px;
+}
+
+.nav-area .finish-btn:hover {
+    transform: scale(1.125);
+}
+
+
+/*********************************************
+======== RESULT AREA  ==================
+**********************************************/
+
+.result-area {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.result-area .result-stats {
+    display: flex;
+}
+
+
+.result-area .result-stats > p {
+    width: 33%;
+}
+
+
+.result-area .result-stats > p:nth-child(1) {
+    color: darkgreen;
+}
+.result-area .result-stats > p:nth-child(2) {
+    color: red;
+}
+.result-area .result-stats > p:nth-child(3) {
+    color: blue;
+}
+
+.result-area .result-iq {
+    display: block;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+
